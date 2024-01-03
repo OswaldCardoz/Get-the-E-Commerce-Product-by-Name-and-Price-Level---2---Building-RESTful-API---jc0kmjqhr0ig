@@ -12,7 +12,7 @@ app.use(express.json());
 //// Endpoint - /api/v1/products/:id
 app.get("/api/v1/products/:id",(req,res)=>{
 let {id}=req.params;
-id=*=1;
+id*=1;
   if(!isNaN(id)){
   const product =products.find(product =>
     product.id ===id);
